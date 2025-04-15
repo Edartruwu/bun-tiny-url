@@ -18,7 +18,7 @@ This project was created using `bun init` in bun v1.2.5. [Bun](https://bun.sh) i
 
 - To create a short link:
 
-```json
+```bash
 curl -X POST http://localhost:1337/api/shorten \
   -H "Content-Type: application/json" \
   -d '{"url":"https://example.com/very/long/url/that/needs/shortening"}'
@@ -26,7 +26,7 @@ curl -X POST http://localhost:1337/api/shorten \
 
 - To create a custom short link:
 
-```json
+```bash
   curl -X POST http://localhost:1337/api/shorten \
    -H "Content-Type: application/json" \
    -d '{"url":"https://example.com/very/long/url/that/needs/shortening", "customCode":"example"}'
